@@ -10,6 +10,10 @@
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
+<<<<<<< HEAD
+=======
+/db/*.sqlite3-*
+>>>>>>> 16f988531f3a2150200243474f6efa50ab16510d
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -17,6 +21,14 @@
 !/log/.keep
 !/tmp/.keep
 
+<<<<<<< HEAD
+=======
+# Ignore pidfiles, but keep the directory.
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
+
+>>>>>>> 16f988531f3a2150200243474f6efa50ab16510d
 # Ignore uploaded files in development.
 /storage/*
 !/storage/.keep

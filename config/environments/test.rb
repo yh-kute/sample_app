@@ -5,8 +5,14 @@
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+<<<<<<< HEAD
   
   config.cache_classes = false
+=======
+
+  config.cache_classes = false
+  config.action_view.cache_template_loading = true
+>>>>>>> 16f988531f3a2150200243474f6efa50ab16510d
 
   # Do not eager load code on boot. This avoids loading your whole application
   # just for the purpose of running a single test. If you are using a tool that

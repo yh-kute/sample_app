@@ -25,4 +25,8 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select "title", "Contact | Ruby on Rails Tutorial Sample App"
   end
+<<<<<<< HEAD
 end
+=======
+end
+>>>>>>> 16f988531f3a2150200243474f6efa50ab16510d
