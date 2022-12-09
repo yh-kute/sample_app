@@ -4,7 +4,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.6'
 
 gem 'rails',      '6.0.4'
+<<<<<<< HEAD
 gem 'bcrypt',         '3.1.13'
+=======
+>>>>>>> 16f988531f3a2150200243474f6efa50ab16510d
 gem 'bootstrap-sass', '3.4.1'
 gem 'puma',       '4.3.6'
 gem 'sass-rails', '5.1.0'
@@ -40,5 +43,14 @@ group :production do
   gem 'pg', '1.1.4'
 end
 
+<<<<<<< HEAD
 # Windows ではタイムゾーン情報用の tzinfo-data gem を含める必要があります
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+=======
+group :development do
+  gem 'benchmark-ips'
+end
+
+# Windows ではタイムゾーン情報用の tzinfo-data gem を含める必要があります
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+>>>>>>> 16f988531f3a2150200243474f6efa50ab16510d

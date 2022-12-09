@@ -18,7 +18,11 @@ module.exports = function(api) {
   return {
     presets: [
       isTestEnv && [
+<<<<<<< HEAD
         require('@babel/preset-env').default,
+=======
+        '@babel/preset-env',
+>>>>>>> 16f988531f3a2150200243474f6efa50ab16510d
         {
           targets: {
             node: 'current'
@@ -26,7 +30,11 @@ module.exports = function(api) {
         }
       ],
       (isProductionEnv || isDevelopmentEnv) && [
+<<<<<<< HEAD
         require('@babel/preset-env').default,
+=======
+        '@babel/preset-env',
+>>>>>>> 16f988531f3a2150200243474f6efa50ab16510d
         {
           forceAllTransforms: true,
           useBuiltIns: 'entry',
@@ -37,24 +45,41 @@ module.exports = function(api) {
       ]
     ].filter(Boolean),
     plugins: [
+<<<<<<< HEAD
       require('babel-plugin-macros'),
       require('@babel/plugin-syntax-dynamic-import').default,
       isTestEnv && require('babel-plugin-dynamic-import-node'),
       require('@babel/plugin-transform-destructuring').default,
       [
         require('@babel/plugin-proposal-class-properties').default,
+=======
+      'babel-plugin-macros',
+      '@babel/plugin-syntax-dynamic-import',
+      isTestEnv && 'babel-plugin-dynamic-import-node',
+      '@babel/plugin-transform-destructuring',
+      [
+        '@babel/plugin-proposal-class-properties',
+>>>>>>> 16f988531f3a2150200243474f6efa50ab16510d
         {
           loose: true
         }
       ],
       [
+<<<<<<< HEAD
         require('@babel/plugin-proposal-object-rest-spread').default,
+=======
+        '@babel/plugin-proposal-object-rest-spread',
+>>>>>>> 16f988531f3a2150200243474f6efa50ab16510d
         {
           useBuiltIns: true
         }
       ],
       [
+<<<<<<< HEAD
         require('@babel/plugin-transform-runtime').default,
+=======
+        '@babel/plugin-transform-runtime',
+>>>>>>> 16f988531f3a2150200243474f6efa50ab16510d
         {
           helpers: false,
           regenerator: true,
@@ -62,7 +87,11 @@ module.exports = function(api) {
         }
       ],
       [
+<<<<<<< HEAD
         require('@babel/plugin-transform-regenerator').default,
+=======
+        '@babel/plugin-transform-regenerator',
+>>>>>>> 16f988531f3a2150200243474f6efa50ab16510d
         {
           async: false
         }

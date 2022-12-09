@@ -9,5 +9,15 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", help_path
     assert_select "a[href=?]", about_path
     assert_select "a[href=?]", contact_path
+<<<<<<< HEAD
   end
 end
+=======
+    assert_select "a[href=?]", signup_path
+    get contact_path
+    assert_select "title", full_title("Contact")
+    get signup_path
+    assert_select "title", full_title("Sign up")
+  end
+end
+>>>>>>> 16f988531f3a2150200243474f6efa50ab16510d
